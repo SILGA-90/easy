@@ -8,6 +8,7 @@
             <div class="col-md-2 ico">
                 <div class="icon shadow-soft border border-light rounded-circle mt-2" > 
                     <img class="img-fluid" src="./assets/images/monlogo.png" alt="Logo dark">
+                    <a href="#top"><i class="arrow fas fa-arrow-alt-circle-up fa-2x"></i>
                 </div>
             </div>
             <div class="col-md-10">

@@ -55,10 +55,9 @@
     <script src="{{asset('scripts/me.js')}}"></script>
     <script src="{{asset('scripts/mon_style.js')}}"></script>
     <script src="{{asset('scripts/neumorphism.js')}}"></script>
-    <script src="{{asset('scripts/scrolltop.js')}}"></script>
+    {{-- <script src="{{asset('scripts/scrolltop.js')}}"></script> --}}
     <script src="{{asset('scripts/search_form.js')}}"></script>
     <script src="{{asset('scripts/bootstrap-datepicker.min.js')}}"></script>
-    {{-- <script src="{{asset('scripts/neumorphism.js')}}"></script> --}}
     <script>
         $(function () {
             bsCustomFileInput.init();

@@ -8,6 +8,7 @@
         <div class="col-md-2 ico">
             <div class="icon shadow-soft border border-light rounded-circle mt-2" > 
                 <img class="img-fluid" src="./assets/images/monlogo.png" alt="Logo dark">
+                <a href="#top"><i class="arrow fas fa-arrow-alt-circle-up fa-2x"></i>
             </div>
         </div>
         <div class="col-md-10">
@@ -20,7 +21,7 @@
                         <a class="nav-link mb-sm-3 mb-md-0 navme" href="#"><span class="far fa-sun mr-2"></span>A propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link mb-sm-3 mb-md-0 navme" href="#"><span class="far fa-comments mr-2"></span>Contact</a>
+                        <a class="nav-link mb-sm-3 mb-md-0 navme" href="{{route('contact')}}"><span class="far fa-comments mr-2"></span>Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mb-sm-3 mb-md-0 navme" href="{{ route('login') }}"><span class="far fa-user-circle mr-2"></span>Login</a>

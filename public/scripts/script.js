@@ -112,3 +112,22 @@ $(window).load(function() {
         })
         
 
+
+$(window).ready(function () {
+    $(window).scroll(function () {
+        if ($(".arrow").scrollTop() >= 400) {
+            $(this).show();
+        } else {
+            $(this).hide();
+        }
+    });
+
+    $("a[href='#top']").click(function () {
+        $("html, body").animate(
+            {
+                scrollTop: 0,
+            },
+            500
+        );
+    });
+});
