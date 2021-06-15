@@ -47,6 +47,17 @@
     color: red;
 }
 
+.fixedicon{
+	position: fixed;
+	left: 15px;
+	top: 175px;
+	width: 70px;
+}
+.fixedicon img{
+	width: 70px;
+}
+
+
 @media (min-width: 276px) {
     .d1 {
         margin-bottom: 25px;
@@ -69,4 +80,15 @@
     .lasthr{
         border: none;
     }
+}
+@media (max-width: 680px){
+    .fixedicon{
+	position: -ms-page;
+	left: 15px;
+	top: 175px;
+	width: 70px;
+}
+.fixedicon img{
+	width: 40px;
+}
 }

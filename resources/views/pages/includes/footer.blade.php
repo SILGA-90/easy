@@ -1,4 +1,11 @@
-    <div class="col-md-2"></div>
+    <div class="col-md-2">
+        <div class="fixedicon clear">
+            <a target="_blank" href="http://www.facebook.com"><img src="{{asset('assets/images/social/fb.png')}}" alt="Facebook"></a>
+            <a target="_blank" href="http://www.youtube.com"><img src="{{asset('assets/images/social/yt.png')}}" alt="youtube"></a>
+            <a target="_blank" href="http://www.twitter.com"><img src="{{asset('assets/images/social/tw.png')}}" alt="Twitter"></a>
+            <a target="_blank" href="http://www.linkedin.com"><img src="{{asset('assets/images/social/li.png')}}" alt="Linkedin"></a>
+        </div>
+    </div>
     <div class="col-md-10 ico">
         <div class="card bg-primary shadow-soft border-light px-2 py-3 mt-4 mb-4">
             <div class="card-header pb-0 text-center">

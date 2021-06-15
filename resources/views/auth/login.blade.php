@@ -198,10 +198,14 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text"><span class="fas fa-unlock-alt"></span></span>
                                                 </div>
-                                                <input class="form-control @error('password') is-invalid @enderror" id="exampleInputPassword6" placeholder="Password" type="password" aria-label="email adress" name="password">
+                                                <input class="form-control @error('password') is-invalid @enderror" id="password" placeholder="Password" type="password" aria-label="email adress" name="password">
+                                                
                                                 @error('password')
                                                 <span class="error invalid-feedback">{{ $message }}</span>
                                                 @enderror
+                                                <div id="toggle" onclick="showHide();">
+                                                    <img src="{{asset('assets/images/show.png')}}" alt="">
+                                                </div>
                                             </div>
                                         </div>    
                                         <div class="button-box signInBtn-Box">
@@ -325,4 +329,22 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('third_party_scripts')
+    <script type="text/javascript">
+        const password = document.getElementById('password');
+        const toggle = document.getElementById('toggle');
+
+        function showHide() {
+            if (password.type === 'password') {
+                password.setAttribute('type','text');
+                toggle.classList.add('hide')
+            }
+            else {
+                password.setAttribute('type','password');
+                toggle.classList.remove('hide');
+            }
+        }
+    </script>
 @endsection

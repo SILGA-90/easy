@@ -217,3 +217,22 @@
         padding: 0 15px;
     }
 }
+
+#toggle {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    /* background-size: cover; */
+    cursor: pointer;
+}
+
+#toggle.hide {
+    background: url("assets/images/hide.png");
+    background-size: cover;
+}
+#password {
+    background: transparent;
+}

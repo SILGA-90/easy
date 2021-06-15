@@ -18,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"rel="stylesheet">
 
     <link rel="stylesheet"
-          {{-- href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"/> --}}
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css"/>
 
     @include('pages.includes.styles')
 
@@ -29,7 +29,6 @@
     <div class="container" id="container">
         <div class="row mt-2">
             @yield('content')
-
             @include('pages.includes.footer')
         </div>
         {{-- @include('pages.includes.navbar') --}}
