@@ -37,19 +37,20 @@ class AllPagesController extends Controller
         $bus = bus::all();
         $compagnies = compagnies::all();
 
-
-
-        // $fromcity = $request->departcity_id;
-        // $tocity = $request->arrivalcity_id;
-        // $doj = $request->day_id;
-        // $dor = $request->dor;
-        // $result = itineraires::where('departcity_id', '=', $fromcity)
-        //     ->where('arrivalcity_id', '=', $tocity)
-        //     ->where('day_id ', '=', $doj)
-        //     ->get();
+        $fromcity = $request->fromcity;
+        $tocity = $request->tocity;
+        $doj = $request->jour;
+        $fromcity = departcity::where('dcity_name', 'like', '%' . request('dest_from') . '%')->get();
+        $tocity = arrivalcity::where('acity_name', 'like', '%' . request('dest_to') . '%')->get();
+        $doj = days::where('jour', 'like', '%' . request('doj') . '%')->get();
+        $dor = $request->dor;
+        $result = itineraires::where('departcity_id', '=', $fromcity)
+            ->where('arrivalcity_id', '=', $tocity)
+            ->where('jour ', '=', $doj)
+            ->get();
         // $sellTickets = SellTicket::all();
         // dd($result);
-        return view('pages.reservation', compact('departcity', 'arrivalcity', 'times', 'prices', 'days', 'bus', 'compagnies'));
-        // ->with(['result' => $result, 'data' => $request]);
+        return view('pages.reservation', compact('departcity', 'arrivalcity', 'times', 'prices', 'days', 'bus', 'compagnies'))
+        ->with(['result' => $result, 'data' => $request]);
     }
 }
